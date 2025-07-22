@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Post a Load</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav>
+  <a href="dashboard.html">Dash Board</a>
+  <a href="marketplace.html">Marketplace</a>
+  <a href="postload.html">Post Load</a>
+  <a href="messages.html">Messages</a>
+  <a href="profile.html">Profile</a>
+  <button id="logoutBtn">Logout</button>
+</nav>
+<main>
+  <form id="postLoadForm">
+    <input name="origin" placeholder="Pickup Address" required>
+    <input name="destination" placeholder="Delivery Address" required>
+    <select name="loadType" required>
+      <option value="">Load Type</option>
+      <option>Dry Van</option><option>Flatbed</option><option>Reefer</option>
+    </select>
+    <input name="weight" placeholder="Weight (kg)" type="number" required>
+    <input name="rate" placeholder="Rate ($)" type="number" required>
+    <input name="date" type="datetime-local" required>
+    <button type="submit">Post Load</button>
+  </form>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
